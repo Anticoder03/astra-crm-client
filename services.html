@@ -54,6 +54,10 @@
 </nav>
 
 <style>
+    html {
+  scroll-behavior: smooth;
+}
+
 .navbar {
 transition: all 0.3s ease;
 padding: 1rem 0;
@@ -493,7 +497,18 @@ if (window.scrollY > 0) {
         </div>
     </section>
 
-    <?php include '_Footer.php'; ?>
+    <footer class="bg-gray-100 text-center py-4 mt-10">
+        <p class="text-gray-600">&copy; <span id="year"></span> Astra CRM. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 
     <style>
         .custom-shape-divider-bottom {
